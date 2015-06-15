@@ -1,0 +1,6 @@
+{ "extensionName" : "ScratchBot",
+  "extensionPort" : 8888,
+  "blockSpecs" : [
+      [" ", "move by: %n.x %n.y", "moveBy", "x", "y"]
+  ]
+}

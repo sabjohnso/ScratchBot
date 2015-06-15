@@ -1,0 +1,25 @@
+#+TITLE:ScratchBot - Driving Stepper Motors through Scratch
+
+* Description
+  A project to allow the kids to drive stepper motors through Scratch.
+
+  The stepper motors are connected to an [[http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove][Arduino Duemilanove]], which
+  communicates with a computer over a USB virtual serial port. New
+  blocks are added to scratch using the [[http://wiki.scratch.mit.edu/w/images/ExtensionsDoc.HTTP-9-11.pdf][Scratch HTTP Extensions]], and
+  it is all linked together through a tiny Python web server, which
+  listens for commands on a designated socket and the reformats them
+  and writes them to the virtual serial port.
+
+  The [[http://wiki.scratch.mit.edu/w/images/ExtensionsDoc.HTTP-9-11.pdf][Scratch HTTP Extensions]] are a very simple and clean way to
+  extend scratch.  It would also be very straight forward to allow
+  communication in the other direction and use the [[http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove][Arduino Duemilanove]] 
+  as a data aquisition board, which some fun to the [[http://www.snapcircuits.net/][Snap Circuits]].
+
+
+* Status
+  Currently, only one motor is driven, because I cannot find the other
+  UNL2003 chip.  Once it shows up, the code needs to be updated to
+  synchronize the motion of the two motors.  Everything is very rough.
+
+
+
